@@ -1,14 +1,36 @@
+
+# actuator 설정
 management:
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+
   endpoint:
     shutdown:
-      enabled: true  # shutdown ????
+      enabled: true  # shutdown 기능 킴
+
     health:
       show-details: always
-      # ???????? ?????? ??? ??? ????? ????.
-      # validationQuery : "isValid()" -> ????.
-      # show-components: always ? ??.
+      # validationQuery : "isValid()" -> 정상
+      # show-components: always 도 있음
 
   endpoints:
     web:
       exposure:
         include: "*"
+
+info:
+  app:
+    name: hello-actuator
+    company: house
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
