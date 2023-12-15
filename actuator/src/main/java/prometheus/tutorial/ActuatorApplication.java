@@ -4,7 +4,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepository;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
+import prometheus.tutorial.order.v0.OrderConfigV0;
+import prometheus.tutorial.order.v1.OrderConfigV1;
+import prometheus.tutorial.order.v2.OrderConfigV2;
+import prometheus.tutorial.order.v3.OrderConfigV3;
+import prometheus.tutorial.order.v4.OrderConfigV4;
 
+//@Import(OrderConfigV0.class)
+//@Import(OrderConfigV1.class)
+//@Import(OrderConfigV2.class)
+//@Import(OrderConfigV3.class)
+@Import(OrderConfigV4.class)
 @SpringBootApplication
 public class ActuatorApplication {
 

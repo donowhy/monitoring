@@ -40,6 +40,9 @@ server:
       enabled: true
       force: true
 
+spring:
+  main:
+    allow-bean-definition-overriding: true
 
 # 개발 서버는 debug, trace 레벨까지 찍고, 실제 운영 환경에서는 info가 대부분이다.
 #logging:
