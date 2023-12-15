@@ -42,9 +42,9 @@ server:
 
 
 # 개발 서버는 debug, trace 레벨까지 찍고, 실제 운영 환경에서는 info가 대부분이다.
-logging:
-  level:
-    h.actuator.controller: debug
+#logging:
+#  level:
+#    h.actuator.controller: debug
     # 실시간 변경하려고 하면
     # http://localhost:8080/actuator/loggers/h.actuator.controller [POST] 로
     # {

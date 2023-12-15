@@ -1,4 +1,4 @@
-package healthCheck.actuator;
+package prometheus.tutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepository;
